@@ -1,2 +1,2 @@
-# Saz-n-Jaguero
+# Sazon-Jaguero
 Sitio web del restaurante 
