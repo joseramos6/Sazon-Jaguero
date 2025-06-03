@@ -3,3 +3,14 @@
     height: auto;
     margin: 12px;
 }
+
+.boton-menu{
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+.boton-menu:hover{
+    background-color: rgb(52, 52, 52);
+    color: white;
+
+}
