@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Sazón Jaguero</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,17 +14,17 @@
   </head>
   <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
+        <a class="navbar-brand" href="#">
+          <img
             src="https://img.icons8.com/ios-filled/50/ffffff/restaurant.png"
             alt="Logo Restaurante"
             width="32"
             height="32"
             class="me-2"
-          />Sazón Jaguero</a
-        >
+          />Sazón Jaguero
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,11 +42,13 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menú</a>
+              <a class="nav-link" href="#menu">Menú</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal">Iniciar Sesión</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -66,7 +68,7 @@
     <!-- Fin barra de navegación -->
 
     <!-- Carrusel -->
-
+<section>
     <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
@@ -147,8 +149,9 @@
         <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
+    </section>
 
-    <!-- Tarjetas Mejoradas -->
+    <!-- Tarjetas -->
     <section id="menu" class="py-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-5 display-5 fw-bold text-primary">
@@ -346,6 +349,162 @@
         </div>
       </div>
     </section>
+
+    <!-- MODAL -->
+     <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Reseñas -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5 display-6 fw-bold text-primary">Reseñas de Nuestros Clientes</h2>
+    <div class="row justify-content-center g-4">
+      <!-- Reseña 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow rounded-4 h-100">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1" class="rounded-circle me-3" width="56" height="56">
+              <div>
+                <h6 class="mb-0 fw-bold">Carlos Pérez</h6>
+                <small class="text-muted">Cliente frecuente</small>
+              </div>
+            </div>
+            <div class="mb-2 text-warning">
+              <span class="fs-5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="card-text">¡Excelente atención y la comida deliciosa! Recomiendo la hamburguesa clásica, es mi favorita.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Reseña 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow rounded-4 h-100">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 2" class="rounded-circle me-3" width="56" height="56">
+              <div>
+                <h6 class="mb-0 fw-bold">María Gómez</h6>
+                <small class="text-muted">Visitante</small>
+              </div>
+            </div>
+            <div class="mb-2 text-warning">
+              <span class="fs-5">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            </div>
+            <p class="card-text">El ambiente es muy acogedor y la pizza pepperoni estuvo espectacular. ¡Volveré pronto!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Reseña 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow rounded-4 h-100">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Cliente 3" class="rounded-circle me-3" width="56" height="56">
+              <div>
+                <h6 class="mb-0 fw-bold">Juan Rodríguez</h6>
+                <small class="text-muted">Cliente nuevo</small>
+              </div>
+            </div>
+            <div class="mb-2 text-warning">
+              <span class="fs-5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <p class="card-text">Me encantó la ensalada César y la rapidez del servicio. ¡Muy recomendado!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Pie de pagina -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <img
+          src="https://img.icons8.com/ios-filled/50/ffffff/restaurant.png"
+          alt="Logo Restaurante"
+          width="40"
+          height="40"
+          class="me-2 align-middle"
+        />
+        <span class="fs-5 fw-bold">Sazón Jaguero</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+        <a
+          href="https://www.instagram.com/sazonjaguero/"
+          class="text-white me-3"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram"
+        >
+          <img
+          src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png"
+          alt="Instagram"
+          width="30"
+          height="30"
+          />
+        </a>
+        <a
+          href="mailto:contacto@sazonjaguero.com"
+          class="text-white me-3"
+          title="Correo electrónico"
+        >
+          <img
+          src="https://img.icons8.com/ios-filled/30/ffffff/new-post.png"
+          alt="Email"
+          width="30"
+          height="30"
+          />
+        </a>
+        <a
+          href="https://wa.me/573001234567"
+          class="text-white"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="WhatsApp"
+        >
+          <img
+          src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png"
+          alt="WhatsApp"
+          width="30"
+          height="30"
+          />
+        </a>
+        </div>
+      </div>
+      <hr class="border-secondary opacity-50" />
+      <div class="row">
+        <div class="col text-center">
+        <small>
+          &copy; 2025 Sazón Jaguero. Todos los derechos reservados.
+        </small>
+        </div>
+      </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
